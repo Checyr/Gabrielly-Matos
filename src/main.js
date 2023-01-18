@@ -1,8 +1,8 @@
-var i = 0;
-var l = 0;
-var txt = 'GABRIELLY MATOS';
-var txt2 = 'FULLSTACK DEVELOPER' 
-var speed = 150; 
+let i = 0;
+let l = 0;
+const txt = 'GABRIELLY MATOS';
+const txt2 = 'FULLSTACK DEVELOPER'
+const speed = 150;
 
 function typeWriter() {
 
