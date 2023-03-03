@@ -369,7 +369,7 @@ footer{
     left: 111vh;
     width: 100px;
     height: 100px;
-    background-image: url("../src/img/planetTexture/planet-texture001.png");
+    background-image: url("./img/planetTexture/planet-texture001.png");
     border-radius: 50%;
     background-size: cover;
     display: flex;
@@ -378,6 +378,7 @@ footer{
 
 #maia{
     position: absolute;
+    background-image: url("./img/planetTexture/planet.PNG");
     top: 50vh;
     left: 80vh;;
     width: 150px;
