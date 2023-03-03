@@ -19,26 +19,29 @@
             </div>
                 <ul class="nav-list">
                     <li>
-                        <a href=”/” class="li1">Home</a>
+                        <button class="btn-nav" id="btn-home"><img src="src/img/home.png" alt="" srcset=""></button>
                     </li>
                     <li>
-                        <a href=”/works” class="li2">Works</a>
+                        <button class="btn-nav" id="btn-github"><img src="src/img/github.png" alt="" srcset=""></button>
                     </li>
                     <li>
-                        <a href=”/about” class="li3">About Me</a>
+                        <button class="btn-nav" id="btn-twitter"><img src="src/img/twitter.png" alt="" srcset=""></button>
                     </li>
                     <li>
-                        <a href=”/contact” class="li4">Contact</a>
+                        <button class="contact">Contact-me</button>
                     </li>
                 </ul>
             </nav>
+            </div>
     </header>
+
             <div class="container-main">
                 <main role="main">
                     <div class="writing">
                         <p id="write-name"></p>
                         <p id="write-name2"></p>
                     </div>
+                    <img class="rocket" src="src/img/rocket.png" alt="" srcset="">
                         <div class="div-span">
                                 <span class="meteor"></span>
                                 <span class="meteor"></span>
@@ -51,26 +54,40 @@
                                 <span class="meteor"></span>
                                 <span class="meteor"></span>
                             <div class="arrow">
-                                <p><i class="arrow-down2"></i></p>
-                                <p><i class="arrow-down"></i></p>
+                                <a href="#title-planet">
+                                    <p><i class="arrow-down2"></i></p>
+                                    <p><i class="arrow-down"></i></p>
+                                </a>
+
                             </div>
                         </div>
 
                             <div class="container-planets">
                                 <section>
-                                    <span class="planet" id="alaya"></span>
+                                    <span class="planet" id="alaya" onclick="new BoxTitle('planetTexture/planet-texture001.png')"></span>
                                     <span class="planet" id="celeste"></span>
-                                    <span class="planet" id="maia"></span>
+                                    <img class="planet" id="maia" src="planetTexture/planet.PNG" alt="" srcset="">
                                     <span class="planet" id="atlas"></span>
                                     <span class="planet" id="antares"></span>
                                     <span class="planet" id="arches"></span>
+                                    <span class="moon-nova"></span><span id="moon"></span>
                                 </section>
                     </div>
                 </main>
-                    <div class="title-planet">
+                    <div class="title-planet" id="title-planet">
+                        <div class="arrow-side">
+                                <p class="p-side-arrow"><i class="arrow-left"></i></p>
+                        </div>
                             <section>
-                                <p class="title-planet-section"></p>
+                                <div class="box-title-planet">
+                                    <p class="title-planet-section">PLANET</p>
+                                    <img src="" alt="" id=planetBox>
+                                    <span id="skill-bar"></span>
+                                </div>
                             </section>
+                        <div class="arrow-side">
+                                <p><i class="arrow-right"></i></p>
+                        </div>
                         </div>
                     </div>
 

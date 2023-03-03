@@ -17,4 +17,6 @@ function typeWriter() {
    l++;
    setTimeout(typeWriter, speed);
    }
+
 }
+

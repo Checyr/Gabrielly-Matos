@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Lato";
-    src: url('Fonts\Lato-Regular.ttf') format('truetype');
+    src: url("Fonts/Lato-Regular.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,19 +9,19 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: "Lato", normal;
+    font-family: "Lato", normal, serif;
     color: #FFF;
 }
 
 body{
     border: 1px solid #FFF;
-    background-color: #1F1C1C;
+    background-image: linear-gradient(to bottom, #141414, #151518, #15161c, #141721, #121925);
     overflow-x: hidden
 }
 
 ::-webkit-scrollbar{
     width: 12px;
-    height: 2pxpx;
+    height: 2px;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -39,6 +39,10 @@ header{
     background-color: #1F1C1C;
 }
 
+:root{
+    scroll-behavior: smooth;
+}
+
 .container-nav{
     border: 1px solid #Fff;
 }
@@ -52,10 +56,11 @@ nav {
 
 main{
     background-size: cover;
-    height: 92vh;
+    height: 90vh;
     border: 1px solid #FFF;
     display: flex;
 }
+
 
 .nav-list {
     display: flex;
@@ -73,25 +78,27 @@ a{
 
 .logo-nav{
     display: flex;
-    margin:0 0 0 10px;
+    margin:10px 0 0 10px;
     justify-content: space-between;
     padding: 0;
+    font-size: 20px;
+    font-weight: bolder;
 }
 .li1:hover{
     font-size: 1.6vh;
-    box-shadow: 0px 2px 0px red;
+    box-shadow: 0 2px 0 red;
 }
 .li2:hover{
     font-size: 1.6vh;
-    box-shadow: 0px 2px 0px #009dff;
+    box-shadow: 0 2px 0 #009dff;
 }
 .li3:hover{
     font-size: 1.6vh;
-    box-shadow: 0px 2px 0px #00ff27;
+    box-shadow: 0 2px 0 #00ff27;
 }
 .li4:hover{
     font-size: 1.6vh;
-    box-shadow: 0px 2px 0px #ffef00;
+    box-shadow: 0 2px 0 #ffef00;
 }
 
 p{
@@ -232,16 +239,9 @@ p{
     top: 50%;
     left: 45px;
     position: absolute;
-    font-size: 62px;
+    font-size: 70px;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 5px solid white;
-    animation: blink-caret 1s steps(15) infinite;
-    display: flex;
-}
-
-#write-name:hover{
-    font-size: 70px;
     background-image: linear-gradient(
         -90deg,
         rgba(148,0,211,1) 7%,
@@ -252,14 +252,11 @@ p{
         rgba(255,127,0,1)70%,
         rgba(255,0,0,1)84%
     );
-    background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
     color: #fff;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
     font-weight: bold;
@@ -270,14 +267,8 @@ p{
     top: 60%;
     left: 55px;
     position: absolute;
-    font-size: 18px;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 5px solid white;
-    animation: blink-caret 1s steps(15) infinite;
-    display: flex;
-}
-#write-name2:hover{
     background-image: linear-gradient(
         -90deg,
         rgba(148,0,211,1) 7%,
@@ -290,17 +281,14 @@ p{
     );
     font-size: 20px;
     animation: textclip 2s linear reverse infinite;
-    background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
     color: #fff;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-weight: bold ;
 }
-    @keyframes textclip {
+@keyframes textclip {
     to {
       background-position: 200% center;
     }
@@ -325,14 +313,17 @@ p{
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
 .arrow {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 44% 50%;
+    margin: 85vh 50% 50vw;
 }
+
 .arrow-down:hover{
+    position: absolute;
     animation: arrow 2s linear infinite;
 }
 
@@ -342,7 +333,7 @@ p{
     50% { border-color: rgb(255, 255, 255); }
 }
  .title-planet section{
-    background: #131313;
+    background: #15171f;
     height: 500px;
     width: 100%;
     left: 100px;
@@ -357,6 +348,237 @@ footer{
     justify-content: space-between;
 }
 
-/* .planet #alaya{
-    width: ;
-} */
+.planet{
+    content: "";
+    position: absolute;
+    top: 20vh;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    animation: planet 3s linear infinite;
+}
+
+.div-alaya{
+    text-align: center;
+    background-size: cover;
+}
+
+#alaya{
+    position: absolute;
+    top: 32vh;
+    left: 111vh;
+    width: 100px;
+    height: 100px;
+    background-image: url("/planetTexture/planet-texture001.png");
+    border-radius: 50%;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+#maia{
+    position: absolute;
+    top: 50vh;
+    left: 80vh;;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+#atlas{
+    position: absolute;
+    top: 80vh;
+    left: 100vh;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(160deg,#FFF145 22%,#E85825 55%,#FF373E 100%);
+    border-radius: 50%;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+#celeste{
+    background-image: linear-gradient(to left,#4270e5, #4270E5FF,#50EBEC);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 60vh;
+    left: 120vh;
+}
+
+.moon-nova{
+    content: "";
+    border-radius: 50%;
+    background-image: linear-gradient(470deg, transparent, transparent, white);
+    text-decoration: none;
+    position: absolute;
+    transform: translateY(-90%);;
+    top: 20vh;
+    width: 100px;
+    height: 100px;
+    margin-left: 90%;
+}
+#moon{
+    margin-left: 90%;
+    content: "";
+    background: #141416;
+    border: transparent;
+    top: 15.5vh;
+    border-radius: 50%;
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    transform: translateY(-50%);
+}
+
+#planet a{
+    text-decoration: none;
+    color: #1F1C1C;
+    margin-top: 30px;
+    width: 170px;
+    left: 50px;
+}
+
+.title-alaya-planet{
+    height: 150px;
+    width: 170px;
+    left: 50px;
+    color: #1F1C1C;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+.img-balon{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: -1;
+}
+.btn-nav{
+    border-radius: 50%;
+    border: #FFFFFF solid 1px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+}
+
+.contact{
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border: #fff solid 1px;
+
+}
+.star{
+    background: white;
+    border-radius: 50%;
+    content: "";
+    width: 3px;
+    height: 5px;
+    animation: star 2s infinite;
+}
+
+.star-h{
+    background: white;
+    border-radius: 50%;
+    content: "";
+    width: 3px;
+    height: 5px;
+    animation: star 2s infinite;
+    transform: rotate(90deg);
+}
+@keyframes star {
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.title-planet{
+    background: #15171e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-title-planet{
+    margin: auto auto;
+    width: 800px;
+    height: 300px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 3px 3px 25px #b2afaf;
+}
+.title-planet-section{
+    margin-top: 20px;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.arrow-left{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    transform: rotate(-225deg);
+    margin-left: -430px;
+    margin-top: 50px;
+}
+.arrow-right{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    transform: rotate(315deg);
+    margin-left: 415px;
+    margin-top: 50px;
+}
+
+.arrow-side{
+    position: absolute;
+    display: flex;
+    margin: 87vh 50% 50vw;
+    box-shadow: 2px 2px 50px #b2afaf;
+}
+
+.p-side-arrow:hover{
+    background-size: cover;
+    box-shadow: 2px 2px 50px #b2afaf;
+}
+
+.rocket{
+    max-width: 900px;
+    max-height: 1000px;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 70%;
+    top: 30%;
+}
+
+#ring{
+    border-image: linear-gradient(50deg,transparent,white);
+    border: solid 2px white;
+    border-radius: 50%;
+    content: "";
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+}
