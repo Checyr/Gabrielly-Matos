@@ -572,13 +572,3 @@ footer{
     top: 30%;
 }
 
-#ring{
-    border-image: linear-gradient(50deg,transparent,white);
-    border: solid 2px white;
-    border-radius: 50%;
-    content: "";
-    width: 150px;
-    height: 50px;
-    position: absolute;
-    display: flex;
-}
