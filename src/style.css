@@ -378,7 +378,7 @@ footer{
 
 #maia{
     position: absolute;
-    background-image: url("./img/planetTexture/planet.png");
+    background-image: url("./src/img/planetTexture/planet.png");
     top: 50vh;
     left: 80vh;;
     width: 150px;
