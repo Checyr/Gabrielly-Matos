@@ -64,3 +64,13 @@ function arrowSide(side) {
   }
 
 }
+
+function seemore(){
+  visible = document.getElementById("text-seemore").style.visibility;
+
+  if(visible == 'hidden'){
+    visible = document.getElementById("text-seemore").style.visibility = "visible";
+  }else{
+    visible = document.getElementById("text-seemore").style.visibility = "hidden";
+  }
+}
