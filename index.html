@@ -12,27 +12,25 @@
 </head>
 <body onload="typeWriter()">
     <header>
-            <div class="container-nav">
             <nav>
-            <div class="logo-nav">
-                <p>GABRIELLY MATOS</p>
-            </div>
-                <ul class="nav-list">
-                    <li>
-                        <button class="btn-nav" id="btn-home"><img src="src/img/home.png" alt="" srcset=""></button>
-                    </li>
-                    <li>
-                        <button class="btn-nav" id="btn-github"><img src="src/img/github.png" alt="" srcset=""><a href="https://github.com/Checyr"></a></button>
-                    </li>
-                    <li>
-                        <button class="btn-nav" id="btn-twitter"><img src="src/img/twitter.png"  alt="" srcset=""><a href="https://twitter.com/ChecyrG"></a></button>
-                    </li>
-                    <li>
-                        <button class="contact">Contact-me</button>
-                    </li>
-                </ul>
+                <div class="logo-nav">
+                    <p class="name-gabrielly">GABRIELLY MATOS</p>
+                </div>
+                    <ul class="nav-list">
+                        <li>
+                            <button class="btn-nav" id="btn-home"><img src="src/img/home.png" alt="" srcset=""></button>
+                        </li>
+                        <li>
+                            <button class="btn-nav" id="btn-github"><img class="imgnav" src="src/img/github.png" alt="" srcset=""><a href="https://github.com/Checyr"></a></button>
+                        </li>
+                        <li>
+                            <button class="btn-nav" id="btn-twitter"><img class="imgnav" src="src/img/twitter.png"  alt="" srcset=""><a href="https://twitter.com/ChecyrG"></a></button>
+                        </li>
+                        <li>
+                            <button class="contact">Contact-me</button>
+                        </li>
+                    </ul>
             </nav>
-            </div>
     </header>
             <div class="container-main">
                 <main role="main">
@@ -69,14 +67,15 @@
                                 </section>
                     </div>
                 </main>
+                    <h1 class="title-planet-section">SKILLS</h1>
                     <div class="title-planet" id="title-planet">
                         <div class="arrow-side">
-                                <p class="p-side-arrow"><i class="arrow-right" onclick="arrowSide('right')"></i></p>
+                            <p class="p-side-arrow"><i class="arrow-right" onclick="arrowSide('right')"></i></p>
                         </div>
                             <section>
                                 <div class="box-title-planet">
                                     <img id="skilllogo" src="./src/img/skillslogo/htmlandcss.png" alt="" id="skilllogo">
-                                    <h1 class="title-planet-section">SKILLS</h1>
+
                                     <h4 id="HTML">HTML</h4>
                                     <p><span id="skill-bar"></span></p>
                                     <h6 id="CSS">CSS</h6>
@@ -88,15 +87,14 @@
                         </div>
                         </div>
                     </div>
-                    <hr>
                     <h3 id="box-projects-title"> PROJECTS</h3>
                     <div class="box-projects">
-                        <div class="project" id="box-projects1"><img class="folder" src="./src/img/svg/folder.svg" alt="" srcset=""><img class="githubbox" src="./src/img/github-box.png" alt="" srcset=""><img class="export" src="./src/img/export.png" alt=""><h6>Flappy Bird AI</h6><p class="text-project">A Flappy Bird game that can be played <br> by an AI or yourself.</p><p class="tech">Python</p></div>
-                        <div class="project" id="box-projects2"><img class="folder" src="./src/img/svg/folder.svg" alt="" srcset=""><img class="githubbox" src="./src/img/github-box.png" alt="" srcset=""><img class="export" src="./src/img/export.png" alt=""><h6>Trip Expense</h6><p class="text-project">Mobile app that calculate your expense <br> for a trip.</p><p class="tech">Kotlin</p>></div>
-                        <div class="project" id="box-projects3"><img class="folder" src="./src/img/svg/folder.svg" alt="" srcset=""><img class="githubbox" src="./src/img/github-box.png" alt="" srcset=""><img class="export" src="./src/img/export.png" alt=""><h6>E-commerce</h6><p class="text-project">A mobile app  tickets and get help with a<br> functional dashboard.</p><p class="tech" id="tech1">Java</p><p class="tech" id="tech2">Firebase</p></div>
-                        <div class="project" id="box-projects4"><img class="folder" src="./src/img/svg/folder.svg" alt="" srcset=""><img class="githubbox" src="./src/img/github-box.png" alt="" srcset=""><img class="export" src="./src/img/export.png" alt=""><h6>Help desk</h6><p class="text-project">A website that can be used to create <br> tickets and get help with a functional <br> dashboard.</p><p class="tech">PHP</p><p class="tech" id="tech3">Bootstrap</p><p class="tech" id="tech4">Javascript</p></div>
-                        <div class="project" id="box-projects5"><img class="folder" src="./src/img/svg/folder.svg" alt="" srcset=""><h6>Soon</h6><p class="text-project"></p></div>
-                        <div class="project" id="box-projects6"><img class="folder" src="./src/img/svg/folder.svg" alt="" srcset=""><h6>Soon</h6><p class="text-project"></p></div>
+                        <div class="project" id="box-projects1"><img class="folder" src="./src/img/svg/folder.svg" alt="" srcset=""><img class="githubbox" src="./src/img/github-box.png" alt="" srcset=""><img class="export" src="./src/img/export.png" alt=""><h6 class="title-project">Flappy Bird AI</h6><p class="text-project">A Flappy Bird game that can be played <br> by an AI or yourself.</p><p class="tech">Python</p></div>
+                        <div class="project" id="box-projects2"><img class="folder" src="./src/img/svg/folder.svg" alt="" srcset=""><img class="githubbox" src="./src/img/github-box.png" alt="" srcset=""><img class="export" src="./src/img/export.png" alt=""><h6 class="title-project">Trip Expense</h6><p class="text-project">Mobile app that calculate your expense <br> for a trip.</p><p class="tech">Kotlin</p>></div>
+                        <div class="project" id="box-projects3"><img class="folder" src="./src/img/svg/folder.svg" alt="" srcset=""><img class="githubbox" src="./src/img/github-box.png" alt="" srcset=""><img class="export" src="./src/img/export.png" alt=""><h6 class="title-project">E-commerce</h6><p class="text-project">A mobile app  tickets and get help with a<br> functional dashboard.</p><p class="tech" id="tech1">Java</p><p class="tech" id="tech2">Firebase</p></div>
+                        <div class="project" id="box-projects4"><img class="folder" src="./src/img/svg/folder.svg" alt="" srcset=""><img class="githubbox" src="./src/img/github-box.png" alt="" srcset=""><img class="export" src="./src/img/export.png" alt=""><h6 class="title-project">Help desk</h6><p class="text-project">A website that can be used to create <br> tickets and get help with a functional <br> dashboard.</p><p class="tech">PHP</p><p class="tech" id="tech3">Bootstrap</p><p class="tech" id="tech4">Javascript</p></div>
+                        <div class="project" id="box-projects5"><img class="folder" src="./src/img/svg/folder.svg" alt="" srcset=""><h6 class="title-project">Soon</h6><p class="text-project"></p></div>
+                        <div class="project" id="box-projects6"><img class="folder" src="./src/img/svg/folder.svg" alt="" srcset=""><h6 class="title-project">Soon</h6><p class="text-project"></p></div>
                         <button id="seemore" onclick="seemore()">More</button>
                         <p id="text-seemore">More projects soon</p>
                     </div>

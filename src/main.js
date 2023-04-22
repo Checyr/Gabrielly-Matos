@@ -4,6 +4,22 @@ const txt = 'GABRIELLY MATOS';
 const txt2 = 'FULLSTACK DEVELOPER'
 const speed = 150;
 let first = true;
+let stars = 230;
+let size = {
+  min: 1,
+  max: 4
+}
+
+document.write("<a class='stars'></a>".repeat(stars));
+
+for(let j = 0; j < document.getElementsByClassName('stars').length; j++){
+  document.getElementsByClassName('stars')[j].style.top = Math.random()*240 + 'vh';
+  document.getElementsByClassName('stars')[j].style.left = Math.random()*100 + 'vw';
+  document.getElementsByClassName('stars')[j].style.width = (Math.random()*(size.max -size.min)+size.min) /10 + 'vmin';
+  document.getElementsByClassName('stars')[j].style.height = document.getElementsByClassName('stars')[i].style.width;
+}
+
+
 
 function typeWriter() {
 
@@ -18,7 +34,6 @@ function typeWriter() {
    l++;
    setTimeout(typeWriter, speed);
    }
-
 }
 let index = 0;
 function style(){
@@ -66,9 +81,7 @@ function arrowSide(side) {
 }
 
 function seemore(){
-  visible = document.getElementById("text-seemore").style.visibility;
-
-  if(visible == 'hidden'){
+  if(document.getElementById("text-seemore").style.visibility == 'hidden'){
     visible = document.getElementById("text-seemore").style.visibility = "visible";
   }else{
     visible = document.getElementById("text-seemore").style.visibility = "hidden";
